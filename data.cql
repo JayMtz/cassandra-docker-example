@@ -5,7 +5,7 @@ CREATE KEYSPACE IF NOT EXISTS block WITH REPLICATION = { 'class' : 'SimpleStrate
 CREATE TABLE IF NOT EXISTS block.metadata (
 entry_id uuid PRIMARY KEY,
 metadata text,
-type text,
+type ascii,
 time timestamp
 );
 
